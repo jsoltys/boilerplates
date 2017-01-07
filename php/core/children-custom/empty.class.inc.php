@@ -8,7 +8,7 @@
 	/**
 	 * Blank class for 
 	 * 
-	 *  Author: Jason Carl Soltys
+	 *  Author: 
 	 *    Date: 
 	 * Version: 
 	 * 
@@ -38,30 +38,5 @@
 	}
 	
 	// -------------------------------------------------------------------------
-	
-	// $temp = new zet_custom_class();
-	// array_output( $temp );
-	
-	/*
-	
-	include_once('php/class_children/database.blog.class.php');
-	
-	$db = new mk_db_mysql_base;
-	
-	$db->connect( '' );
-	$db->blog_initialize();
-	
-	value_set( $path, $value, $append = false, $delimiter = '/' )
-	value_sub( $arr, $path, $default = false, $delimiter = '/' )
-	value_get( $path, $default = false, $delimiter = '/' )
-	value_count( $path, $zerobase = false, $default = false, $delimiter = '/' )
-	clear_value( $path, $delimiter = '/' )
-	export_string()
-	export( $filepath, $write_over = true )
-	import_string( $value )
-	import( $filepath )
-	clear_all()
-	
-	*/
 	
 ?>
