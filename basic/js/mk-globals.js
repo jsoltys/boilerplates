@@ -29,6 +29,9 @@ function mk_minIEVersion( minVersion )
 /* class checkers */
 function mk_hasClass( obj, className )
 {
+	if ( null == obj | undefined == obj.className )
+		{ return false; }
+	
 	var list = obj.className.split(' ');
 	var result = false;
 	
