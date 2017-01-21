@@ -255,9 +255,10 @@ function mk_setupListenerArray( objs, elMethod, aeMethod, func, fallbackFunc )
 	{
 		var el = objs[idx];
 		
-		if ( fallbackFunc && !mk_setupListener( el, elMethod, aeMethod, func ))
+		if ( !mk_setupListener( el, elMethod, aeMethod, func ))
 		{
-			fallbackFunc( el, elMethod, aeMethod, func );
+			if ( fallbackFunc )
+				{ fallbackFunc( el, elMethod, aeMethod, func ); }
 		}
 	}
 }
