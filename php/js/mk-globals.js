@@ -291,13 +291,13 @@ function mk_clearListener( obj, elMethod, aeMethod, func )
 			mk_msg += ' using ' + aeMethod;
 		}
 		
-		console.log( mk_msg + '.' );
+		if ( window.console & mk_debug ) { console.log( mk_msg + '.' ); }
 		
 		mk_result = true;
 	}
 	catch ( msg )
 	{
-		console.log( msg );
+		if ( window.console & mk_debug ) { console.log( mk_msg + '.' ); }
 	}
 	
 	return mk_result;
