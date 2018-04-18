@@ -26,8 +26,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 		
 		<!-- Javascript -->
+		<script type="text/javascript" src="../js/loader.js"></script>
 		<script type="text/javascript"></script>
-		<script src="../js/external.js"></script>
 				<!-- Adds HTML5 element support for earlier versions of IE -->
 			<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,4 +55,13 @@
 			<small>Copyright &copy; YYYY, Name Here</small>
 		</footer>
 	</body>
+	
+	<script>
+      /**
+       * Add scripts here that you do not want blocking the loading of the
+       * page, or you can add global pages right into the document.
+       */
+      
+      js_loader('script', '../js/external.js');
+   </script>
 </html>
